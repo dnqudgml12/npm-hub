@@ -71,7 +71,7 @@ export default function SearchResultCard({
           key={pkg.package.name}
           className="flex max-w-3xl bg-[#1a1a1a] rounded-3xl p-4 hover:bg-[#2a2a2a] mb-3 transition-colors"
         >
-          <div className="flex bg-blue-200 w-96 flex-col gap-3 items-start mb-3">
+          <div className="flex w-96 flex-col gap-3 items-start mb-3">
             <div className="flex">
               <div className="w-auto text-xl  font-semibold  text-primary-50">
                 {pkg.package.name}
@@ -87,7 +87,7 @@ export default function SearchResultCard({
             </div>
             <KeywordsList keywords={pkg.package.keywords} />
           </div>
-          <div className="flex bg-blue-200 flex-col ml-60">
+          <div className="flex  flex-col ml-60">
             <div className="text-right text-sm text-gray-400">
               <span className="text-surface-disabled text-sm">Downloads / week</span>
               <span

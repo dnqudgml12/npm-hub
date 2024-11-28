@@ -8,7 +8,7 @@ const config: Config = {
       colors,
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
 
 export default config;
