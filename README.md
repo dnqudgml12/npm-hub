@@ -30,7 +30,7 @@ const response = await axios.get<{ objects: PackageInfo[] }>(
 
 ### 클라이언트 캐시
 
-자동완성·검색 결과·상세 조회 등은 **`CacheManager`**로 짧은 TTL·최대 개수를 두고 메모리 캐시해, 같은 쿼리에 대한 반복 요청을 줄인다. UI 레이어에서는 **TanStack Query**로 로딩·에러·재검증 흐름을 다룬다.
+자동완성·검색 결과·상세 조회 등은 **CacheManager**로 짧은 TTL·최대 개수를 두고 메모리 캐시해, 같은 쿼리에 대한 반복 요청을 줄인다. UI 레이어에서는 **TanStack Query**로 로딩·에러·재검증 흐름을 다룬다.
 
 ```ts
 // app/api/npm.ts (요지)
